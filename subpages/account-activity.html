@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="_csrf" content="503eeecb-e9f6-49e9-8b13-7f35d380589e" />
+    <meta name="_csrf_header" content="X-CSRF-TOKEN" />
+    <meta name="locale" content="en_US" />
+    <meta name="currency" content="USD" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400" type="text/css">
+    <title>Account Activity</title>
+    <link type="text/css" rel="stylesheet" href="../style.css" media="screen" />
+
+    <style>
+        .blue,
+        a,
+        .headline,
+        .sub-headline,
+        .payerActions .payerActionBtn {
+            color: #500000 !important;
+        }
+        .blueBg,
+        .payer-home-btn,
+        .account-activity-term-header,
+        .account-activity-term-sub-line,
+        .select-student-btn,
+        .breadcrumb li.active a,
+        .cd-breadcrumb.triangle li.active>*,
+        .active .arrow_box,
+        .step.active::before {
+            background-color: #500000 !important;
+        }
+        .btnClear,
+        .op-divider-row,
+        .payerActions .payerActionBtn,
+        .nav .open>a,
+        .navbar .navbar-toggle .icon-bar,
+        .planContent .planDetails .paymentSection a,
+        .receipt-divider-item,
+        .tx-detail-btn,
+        .mobile-detail-clickable,
+        .blueBorder,
+        .btn-outlined,
+        .total-line,
+        .pending-plan .btn,
+        .term-header,
+        .plan-btn,
+        .account-activity-box,
+        .account-activity-box-border,
+        .select-student-btn,
+        .active .arrow_box {
+            border-color: #500000 !important;
+        }
+        .navbar-default .navbar-nav li a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu li a:hover,
+        .payerActions .payerActionBtn:hover,
+        .payerActions ul li a:hover {
+            background-color: #500000 !important;
+            border-color: #500000 !important;
+            color: white !important;
+        }
+        a.blueBg {
+            color: white !important;
+        }
+        a.darkRedBg {
+            color: white !important;
+        }
+        .navbar .navbar-toggle .icon-bar {
+            border-color: white !important;
+        }
+        .btnGrey {
+            color: #757575 !important;
+            border-color: #aaa !important;
+        }
+        .breadcrumb li.active a:after {
+            border-left: 30px solid #500000;
+        }
+    </style>
+
+    <link rel="icon" href="https://op-opu-logos-prod-pub.s3.amazonaws.com/prod/tamuFav.png">
+    <link rel="apple-touch-icon" href="https://op-opu-logos-prod-pub.s3.amazonaws.com/prod/tamuAppIcon.png" />
+
+    <script type="text/javascript" src="/clientsrc/plugins/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="skipper" role="presentation"><a href="#contents-container">Skip to Main Content</a></div>
+    <header role="banner">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="blueBg navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/"><img class="navLogo"
+                            src="https://op-opu-logos-prod-pub.s3.amazonaws.com/prod/tamuLogo.png"
+                            alt="Texas A&M University Home Page" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right" role="menubar">
+                        <li><a class="blue" href="#">Contact Us</a></li>
+                        <li role="none" class="dropdown">
+                            <a href="#" data-toggle="dropdown" tabIndex="0" class="dropdown-toggle" role="menuitem"
+                                aria-haspopup="true" aria-expanded="false">Actions<span class="caret"></span>
+                            </a>
+                        </li>
+                        <li><a href="/logout">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <small aria-label="Last login details"
+        class="light opacticy-half pull-right padding-right-lg margin-top-15-neg tiny-text hidden-xs">Last signed in 11/15/2021 3:07 PM CST</small>
+    <div id="contents-container" class="container" role="main">
+        <div role="alert" class="alert alert-default " id="cookieConsent"><button aria-label="Close"
+                data-dismiss="alert" class="close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="wrapper">
+            <ul id="mainTabs" class="nav nav-tabs no-print">
+                <li class="mainTabs" role="presentation"><a aria-label="Account Summary tab" role="navigation"
+                        class="blue light" href="../index.html">Summary</a></li>
+
+                <li class="mainTabs active" role="presentation"><a aria-label="Current Tab Account Activity"
+                        role="navigation" class="blue light" href="#">Account Activity</a></li>
+
+                <li class="mainTabs" role="presentation"><a aria-label="Payment Plans tab" role="navigation"
+                        class="blue light" href="payment-plans.html">Payment Plans</a></li>
+
+                <li class="mainTabs" role="presentation"><a aria-label="Make Payment tab" role="navigation"
+                        class="blue light" href="to-do.html">To Do</a></li>
+
+                <li class="mainTabs" role="presentation"><a aria-label="Make Payment tab" role="navigation"
+                    class="blue light" href="financial-aid.html">Financial Aid</a></li>
+            </ul>
+            <h1 class="sr-only">Account Activity</h1>
+
+            <!-- We need this in order to show payerActions when only 1 tab is on (FSCJ,XBLite) -->
+            <div class="tabMainContent">
+                <div class="headline blue light text-center student-name-headline">
+                    <span class="sr-only">Student account-</span>
+                    [Student Name] - [Student UIN]
+                </div>
+                <div class="op-divider-row margin-bottom-lg"></div>
+
+                <div class="mainContent">
+                    <div class="alert alert-success center" role="alert">
+                        <strong>Need to add Account Activity content</strong>
+                    <ul>
+                        <li>- Academic Semester (drop down button)</li>
+                        <li>- Table of account activity grouped by charges (top) and payments (bottom)</li>
+                    </ul>
+                        
+                    </div>
+                    <!-- Account Summary Header -->
+                    <div class="row no-print">
+                        <div class="col-xs-12 col-md-6 col-md-offset-1 account-activity-box">
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-8 col-sm-6 text-right">
+                                    <span>Account Balance</span>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 text-right">
+                                    <span class="blue">$0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-8 col-sm-6 text-right">
+                                    <span>Less Anticipated Aid</span>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 text-right">
+                                    <span class="blue">$0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-8 col-sm-6 text-right">
+                                    <span>Less Balance On Payment Plan</span>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 text-right">
+                                    <span class="blue">$0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row-lg">
+                                <div class="col-xs-8 col-sm-6 text-right blue"> <span>Balance Due </span>
+                                    <div class="tiny-text due-date-text"> Due by 11/15/2021</div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 text-right blue">
+                                    <span>$0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-top-sm">
+                                <div class="col-xs-12">
+                                    <div class="center blue light"></div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-top-md padding-left-75 padding-right-75 account-summary-btns">
+
+                                <div class="col-xs-12 col-sm-6">
+                                    <a class="light btnSolid white blueBg btnSmallPadding pointer-cursor summary-plan-btn"
+                                        href="/makePayment">Make Payment</a>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6">
+                                    <a class="light btnClear blue btnSmallPadding pointer-cursor" href="/paymentPlans">View Payment Plans</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="onPlanFooter" role="contentinfo">
+        <div class="clearfix">
+            <ul class="nav nav-pills pull-left">
+            </ul>
+            <ul class="nav nav-pills pull-right">
+                <li>
+                    <a href="#" class="footerLink" aria-label="privacy policy">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footerLink" aria-label="terms of service">Terms of Service</a>
+                </li>
+            </ul>
+        </div>
+        <small aria-label="Last login details"
+            class="light opacticy-half pull-right padding-right-sm margin-top-10-neg margin-bottom-md ten-text visible-xs">Last
+            signed in 11/15/2021 3:07 PM CST</small>
+    </footer>
+    <script type="text/javascript" src="/clientsrc/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="/client/op-public-min.js?v=2.28.0.20211110031006"></script>
+    <script type="text/javascript" src="/client/op-accountactivity-min.js?v=2.28.0.20211110031006"></script>
+</body>
+
+</html>
