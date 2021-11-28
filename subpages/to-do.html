@@ -154,24 +154,51 @@
                 </div>
                 <div class="op-divider-row margin-bottom-lg"></div>
 
-                <div class="mainContent">
-                    <!-- To-Do List -->
-                    <div id="toDoHeader" class="left light large-text">
-						<h2>To Do Items</h2>
-					</div>
-
-                    <div id="toDoList">
-                        <ul>
-                            <li>Fill out FAFSA for 2022-2023</li>
-                            <li>Complete Spring Graduation Questionnaire</li>
-                            <li>Confirm your enrollment</li>
-                            <li>Report Outside Scholarships and Resources</li>
-                            <li class="checked">Pay Balance or Register for Payment Plan</li>
-                        </ul>
+                <div class="mainContent" id="toDoContent">
+                    <div class="toDoElement">
+                        <!-- To-Do List -->
+                        <div id="toDoHeader" class="left light large-text">
+                            <h2>To Do Items</h2>
+                        </div>
+    
+                        <div id="toDoList">
+                            <ul>
+                                <li>Fill out FAFSA for 2022-2023</li>
+                                <li>Complete Spring Graduation Questionnaire</li>
+                                <li>Confirm your enrollment</li>
+                                <li>Report Outside Scholarships and Resources</li>
+                                <li class="checked">Pay Balance or Register for Payment Plan</li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <!-- Table of Documents -->
-                    <!-- TODO: add this -->
+                    <div class="toDoElement">
+                        <!-- Table of Documents -->
+                        <div id="docHeader" class="left light large-text">
+                            <h2>Uploaded Documents</h2>
+                        </div>
+                        <table id="docTable" >
+                            <tr>
+                              <th>Document Title</th>
+                              <th>Received</th>
+                              <th>Mandatory</th>
+                            </tr>
+                            <tr>
+                              <td>Request to Increase Cost of Attendance</td>
+                              <td class="checked"></td>
+                              <td>Yes</td>
+                            </tr>
+                            <tr>
+                              <td>Counselor Review Form</td>
+                              <td>-</td>
+                              <td>Yes</td>
+                            </tr>
+                            <tr>
+                              <td>Education Abroad Documentation</td>
+                              <td>-</td>
+                              <td>No</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

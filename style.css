@@ -2,16 +2,20 @@
 
 /* extra styling added by Texas A&M CSCE 436 Team */
 
+.toDoElement {
+    padding-bottom: 20px;
+}
+
 /* Include the padding and border in an element's total width and height */
-#toDoList #toDoHeader {
+#toDoList #toDoHeader #docHeader #docTable {
     box-sizing: border-box;
-  }
+}
   
 /* Remove margins and padding from the list */
 #toDoList ul {
     margin: 0;
     padding: 0;
-  }
+}
   
 /* Style the list items */
 #toDoList ul li {
@@ -55,19 +59,44 @@
     width: 7px;
 }
 
+#docTable tr td.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #333;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
 /* Style the header */
-#toDoHeader {
-    padding: 20px 30px 20px 10px;
+#toDoContent h2 {
+    padding: 20px 30px 20px 5px;
 }
   
 /* Clear floats after the header */
-#toDoHeader:after {
+#toDoContent h2:after {
     content: "";
     display: table;
     clear: both;
 }
+
+#toDoContent table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
   
-/* Above styling taken from https://www.w3schools.com/howto/howto_js_todolist.asp */
+#toDoContent td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+#toDoContent tr:nth-child(even) {
+    background-color: #dddddd;
+}
 
 /*!
  * Pikaday
