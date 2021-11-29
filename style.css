@@ -7,6 +7,10 @@
     padding-bottom: 20px;
 }
 
+#summaryContent .pageElement {
+    margin-bottom: 10px;
+}
+
 /* Include the padding and border in an element's total width and height */
 .list #toDoHeader #docHeader .docTable {
     box-sizing: border-box;
@@ -98,6 +102,11 @@
 /* Style the header */
 #toDoContent h2 {
     padding: 20px 30px 20px 5px;
+    color: #500000;
+}
+
+#summaryContent h2 {
+    padding: 20px 30px 15x 5px;
     color: #500000;
 }
   
