@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,6 +23,7 @@
         .payerActions .payerActionBtn {
             color: #500000 !important;
         }
+
         .blueBg,
         .payer-home-btn,
         .account-activity-term-header,
@@ -33,6 +35,7 @@
         .step.active::before {
             background-color: #500000 !important;
         }
+
         .btnClear,
         .op-divider-row,
         .payerActions .payerActionBtn,
@@ -54,6 +57,7 @@
         .active .arrow_box {
             border-color: #500000 !important;
         }
+
         .navbar-default .navbar-nav li a:hover,
         .navbar-default .navbar-nav .open .dropdown-menu li a:hover,
         .payerActions .payerActionBtn:hover,
@@ -62,21 +66,75 @@
             border-color: #500000 !important;
             color: white !important;
         }
+
         a.blueBg {
             color: white !important;
         }
+
         a.darkRedBg {
             color: white !important;
         }
+
         .navbar .navbar-toggle .icon-bar {
             border-color: white !important;
         }
+
         .btnGrey {
             color: #757575 !important;
             border-color: #aaa !important;
         }
+
         .breadcrumb li.active a:after {
             border-left: 30px solid #500000;
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #fff;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #818181;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display: block;
         }
     </style>
 
@@ -118,7 +176,8 @@
         </nav>
     </header>
     <small aria-label="Last login details"
-        class="light opacticy-half pull-right padding-right-lg margin-top-15-neg tiny-text hidden-xs">Last signed in 11/15/2021 3:07 PM CST</small>
+        class="light opacticy-half pull-right padding-right-lg margin-top-15-neg tiny-text hidden-xs">Last signed in
+        11/15/2021 3:07 PM CST</small>
     <div id="contents-container" class="container" role="main">
         <div role="alert" class="alert alert-default " id="cookieConsent"><button aria-label="Close"
                 data-dismiss="alert" class="close"><span aria-hidden="true">×</span></button>
@@ -138,7 +197,7 @@
                         class="blue light" href="to-do.html">To Do</a></li>
 
                 <li class="mainTabs" role="presentation"><a aria-label="Make Payment tab" role="navigation"
-                    class="blue light" href="financial-aid.html">Financial Aid</a></li>
+                        class="blue light" href="financial-aid.html">Financial Aid</a></li>
             </ul>
             <h1 class="sr-only">Account Activity</h1>
 
@@ -151,13 +210,36 @@
                 <div class="op-divider-row margin-bottom-lg"></div>
 
                 <div class="mainContent">
-                    <div class="alert alert-success center" role="alert">
-                        <strong>Need to add Account Activity content</strong>
-                    <ul>
-                        <li>- Academic Semester (drop down button)</li>
-                        <li>- Table of account activity grouped by charges (top) and payments (bottom)</li>
-                    </ul>
-                        
+                    <!-- Academic Semester drop down -->
+                    <div class="dropdown">
+                        <button onclick="myFunction()"
+                            class="dropbtn light btnClear blue btnSmallPadding pointer-cursor">Select a Term...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Spring 2022 - College Station</a>
+                            <a href="#">Spring 2022 - Galveston</a>
+                            <a href="#">Spring 2022 - Qatar</a>
+                            <a href="#">etc...</a>
+                        </div>
+
+                        <script>
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+
+                            // Close the dropdown menu if the user clicks outside of it
+                            window.onclick = function (event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                        </script>
                     </div>
                     <!-- Account Summary Header -->
                     <div class="row no-print">
@@ -212,10 +294,65 @@
                                 </div>
 
                                 <div class="col-xs-12 col-sm-6">
-                                    <a class="light btnClear blue btnSmallPadding pointer-cursor" href="/paymentPlans">View Payment Plans</a>
+                                    <a class="light btnClear blue btnSmallPadding pointer-cursor"
+                                        href="/paymentPlans">View Payment Plans</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="margin-bottom-lg"></div>
+                    <!-- Table of account activity grouped by charges and payments -->
+                    <div class="pageElement">
+                        <!-- Table of Documents -->
+                        <div id="docHeader" class="left light large-text">
+                            <h2 style="color: #500000;">Account Activity</h2>
+                        </div>
+                        <table class="docTable">
+                            <tr>
+                                <th style="background-color: #8b3a14; padding:1%; color: white;">Charges</th>
+                                <th style="background-color: #8b3a14; padding:1%; color: white;"></th>
+                            </tr>
+                            <tr>
+                                <td>Student Center Complex Fee</td>
+                                <td>$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>Recreational Sports Fee</td>
+                                <td>$106.00 </td>
+                            </tr>
+                            <tr>
+                                <td>Health Center Fee</td>
+                                <td>$72.50</td>
+                            </tr>
+                            <tr>
+                                <td>Tuition</td>
+                                <td>$3,468.06</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$3,746.56</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: #7dd14c; padding:1%; color: white;">Payments</th>
+                                <th style="background-color: #7dd14c; padding:1%; color: white;"></th>
+                            </tr>
+                            <tr>
+                                <td>Installment 1</td>
+                                <td>$2,286.72</td>
+                            </tr>
+                            <tr>
+                                <td>Installment 2</td>
+                                <td>$2,286.72</td>
+                            </tr>
+                            <tr>
+                                <td>Installment 3</td>
+                                <td>$2,286.72</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$6,860.16</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
