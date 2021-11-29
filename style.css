@@ -98,6 +98,7 @@
 /* Style the header */
 #toDoContent h2 {
     padding: 20px 30px 20px 5px;
+    color: #500000;
 }
   
 /* Clear floats after the header */
