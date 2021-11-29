@@ -3,23 +3,23 @@
 /* extra styling added by Texas A&M CSCE 436 Team */
 
 /*********************** Styling for the To Do List ***********************/
-.toDoElement {
+.pageElement {
     padding-bottom: 20px;
 }
 
 /* Include the padding and border in an element's total width and height */
-#toDoList #toDoHeader #docHeader #docTable {
+.list #toDoHeader #docHeader .docTable {
     box-sizing: border-box;
 }
   
 /* Remove margins and padding from the list */
-#toDoList ul {
+.list ul {
     margin: 0;
     padding: 0;
 }
   
 /* Style the list items */
-#toDoList ul li {
+.list ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
     background: #fff;
@@ -34,19 +34,19 @@
 }
   
 /* Set all odd list items to a different color (zebra-stripes) */
-#toDoList ul li:nth-child(odd) {
+.list ul li:nth-child(odd) {
     background: #eee;
 }
   
 /* When clicked on, add a background color and strike out text */
-#toDoList ul li.checked {
+.list ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
 }
   
 /* Add a "checked" mark when clicked on */
-#toDoList ul li.checked::before {
+.list ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -60,37 +60,37 @@
 }
 
 /*********************** Styling for the Documents Table ***********************/
-#docTable {
+.docTable {
     font-family: "Lato";
     border-collapse: collapse;
     width: 100%;
 }
   
-#docTable td, th {
+.docTable td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
-#docTable td {
+.docTable td {
     padding: 12px 8px 12px 40px;
     font-size: 18px;
 }
   
-#docTable tr:nth-child(even) {
+.docTable tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-#docTable tr td img.checked {
+.docTable tr td img.checked {
     height: 20px;
     width: 20px;
 }
 
-#docTable tr td.checked {
+.docTable tr td.checked {
     padding-left: 35px;
 }
 
-#docTable th {
+.docTable th {
     padding: 0 0 10px 5px;
 }
 
