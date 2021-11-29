@@ -155,7 +155,15 @@
                 <li class="mainTabs" role="presentation"><a aria-label="Make Payment tab" role="navigation"
                     class="blue light" href="subpages/financial-aid.html">Financial Aid</a></li>
             </ul>
+            
+            <br>
+            
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
 
+                </a>
+            </div>
 
             <h1 class="sr-only">Account Summary Dashboard</h1>
 
@@ -226,6 +234,16 @@
                                 </div>
                             </div>
 
+                            <div class="row light summary-info-row-lg">
+                                <div class="col-xs-6 text-right blue">
+                                    <span>Last Payment </span>
+                                    <div class="tiny-text due-date-text">(Paid on) 09/12/2021</div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 text-right blue">
+                                    <span>$0.00</span>
+                                </div>
+                            </div>
+
                             <div class="row margin-top-sm">
                                 <div class="col-xs-12">
                                     <div class="center light">
@@ -241,6 +259,81 @@
                                 <div class="col-xs-12 col-sm-6">
                                     <a class="light btnClear blue btnSmallPadding pointer-cursor summary-plan-btn"
                                         href="/paymentPlans">View Payment Plans</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Financial Aid Summary-->
+                        <div class="col-xs-12 col-md-6">
+                            <div class="row margin-bottom-lg">
+                                <div class="col-xs-12 center light large-text">
+                                    <h2>Financial Aid Summary <span class="sr-only">Fall 2021 College Station and prior
+                                        </span></h2>
+                                </div>
+                                <div class="col-xs-12 center light" aria-hidden="true">
+                                    Fall 2021 College Station and prior
+                                </div>
+                            </div>
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span>Grants & Scholarships</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 text-right">
+                                    <span class="blue">$0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="ant-aid-label">Workstudy</span> 
+                                </div>
+                                <div class="col-xs-6 col-sm-3 text-right">
+                                    <span class="blue">$0.00 </span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="bal-plan-label">Loans</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 text-right">
+                                    <span class="blue">$0.00 </span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="bal-plan-label">Other Aid</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 text-right">
+                                    <span class="blue">$0.00 </span>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row-lg">
+                                <div class="col-xs-6 text-right blue">
+                                    <span>Total Financial Aid </span>
+                                    <div class="tiny-text due-date-text">As of 11/15/2021</div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 text-right blue">
+                                    <span>$0.00</span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-top-sm">
+                                <div class="col-xs-12">
+                                    <div class="center light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-md padding-left-75 padding-right-75 account-summary-btns">
+
+                                <div class="col-xs-12 col-sm-6">
+                                    <a class="light btnSolid white blueBg btnSmallPadding pointer-cursor summary-plan-btn"
+                                        href="/makePayment">My Loan Debt</a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <a class="light btnClear blue btnSmallPadding pointer-cursor summary-plan-btn"
+                                        href="/paymentPlans">View Financial Aid Awards</a>
                                 </div>
                             </div>
                         </div>
@@ -285,6 +378,61 @@
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                        <!--Helpful Links-->
+                        <div class="col-xs-12 col-md-6 mobile-header-spacing">
+                            <div class="row margin-bottom-lg">
+                                <div class="col-xs-12 center light large-text">
+                                    <h2>Helpful Links</h2>
+                                </div>
+                            </div>
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="quick-link-label">How was my aid determined?</span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="/account/authorizedpayer" class="light btnClear blue quick-link-btn">
+                                        Aid Calculator
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="quick-link-label">Student Loans</span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="/account/authorizedpayer" class="light btnClear blue quick-link-btn">
+                                        Self-Cert Loan Form
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="quick-link-label">Emergency & Alternative Loans</span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="https://sbs.tamu.edu/billing-payments/billing-fee-explanations/index.html"
+                                        target="_blank" class="light btnClear blue quick-link-btn">
+                                        Loan Forms Here
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row light summary-info-row">
+                                <div class="col-xs-6 text-right">
+                                    <span class="quick-link-label">Work Study Calculator</span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="https://sbs.tamu.edu/billing-payments/billing-fee-explanations/index.html"
+                                        target="_blank" class="light btnClear blue quick-link-btn">
+                                        Calculator
+                                    </a>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
