@@ -213,12 +213,12 @@
                     <!-- Academic Semester drop down -->
                     <div class="dropdown">
                         <button onclick="myFunction()"
-                            class="dropbtn light btnClear blue btnSmallPadding pointer-cursor">Select a Term...</button>
+                            class="dropbtn light blue btnSmallPadding pointer-cursor" style= "border-color: maroon; border-width: 1px; padding: 15px; margin-bottom: 20px;">Change Term</button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Spring 2022 - College Station</a>
-                            <a href="#">Spring 2022 - Galveston</a>
-                            <a href="#">Spring 2022 - Qatar</a>
-                            <a href="#">etc...</a>
+                            <a href="#">Spring 2022</a>
+                            <a href="#">Fall 2021</a>
+                            <a href="#">Spring 2021</a>
+                            <a href="#">Fall 2020</a>
                         </div>
 
                         <script>
@@ -242,117 +242,53 @@
                         </script>
                     </div>
                     <!-- Account Summary Header -->
-                    <div class="row no-print">
-                        <div class="col-xs-12 col-md-6 col-md-offset-1 account-activity-box">
-                            <div class="row light summary-info-row">
-                                <div class="col-xs-8 col-sm-6 text-right">
-                                    <span>Account Balance</span>
-                                </div>
-                                <div class="col-xs-4 col-sm-3 text-right">
-                                    <span class="blue">$0.00</span>
-                                </div>
-                            </div>
-
-                            <div class="row light summary-info-row">
-                                <div class="col-xs-8 col-sm-6 text-right">
-                                    <span>Less Anticipated Aid</span>
-                                </div>
-                                <div class="col-xs-4 col-sm-3 text-right">
-                                    <span class="blue">$0.00</span>
-                                </div>
-                            </div>
-
-                            <div class="row light summary-info-row">
-                                <div class="col-xs-8 col-sm-6 text-right">
-                                    <span>Less Balance On Payment Plan</span>
-                                </div>
-                                <div class="col-xs-4 col-sm-3 text-right">
-                                    <span class="blue">$0.00</span>
-                                </div>
-                            </div>
-
-                            <div class="row light summary-info-row-lg">
-                                <div class="col-xs-8 col-sm-6 text-right blue"> <span>Balance Due </span>
-                                    <div class="tiny-text due-date-text"> Due by 11/15/2021</div>
-                                </div>
-                                <div class="col-xs-4 col-sm-3 text-right blue">
-                                    <span>$0.00</span>
-                                </div>
-                            </div>
-
-                            <div class="row margin-top-sm">
-                                <div class="col-xs-12">
-                                    <div class="center blue light"></div>
-                                </div>
-                            </div>
-
-                            <div class="row margin-top-md padding-left-75 padding-right-75 account-summary-btns">
-
-                                <div class="col-xs-12 col-sm-6">
-                                    <a class="light btnSolid white blueBg btnSmallPadding pointer-cursor summary-plan-btn"
-                                        href="/makePayment">Make Payment</a>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6">
-                                    <a class="light btnClear blue btnSmallPadding pointer-cursor"
-                                        href="/paymentPlans">View Payment Plans</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="margin-bottom-lg"></div>
+                    
                     <!-- Table of account activity grouped by charges and payments -->
                     <div class="pageElement">
                         <!-- Table of Documents -->
-                        <div id="docHeader" class="left light large-text">
-                            <h2 style="color: #500000; padding-bottom:20px;">Account Activity</h2>
-                        </div>
+                        <h1 style="font-size: 20px; color:#721c24; margin-bottom: 20px;">Charge Summary</h1>
+
                         <table class="docTable">
-                            <tr>
-                                <th style="background-color: white; padding:1%; color: #721c24;">Charges</th>
-                                <th style="background-color: white; padding:1%; color: #721c24;"></th>
-                            </tr>
-                            <tr>
+                            <tr style="background-color: #ffdbdf;">
                                 <td>Student Center Complex Fee</td>
-                                <td>$100.00</td>
+                                <td> $100.00</td>
                             </tr>
-                            <tr>
+                            <tr style="background-color: #ffdbdf;">
                                 <td>Recreational Sports Fee</td>
-                                <td>$106.00 </td>
+                                <td> $106.00 </td>
                             </tr>
-                            <tr>
+                            <tr style="background-color: #ffdbdf;">
                                 <td>Health Center Fee</td>
-                                <td>$72.50</td>
+                                <td> $75.00</td>
                             </tr>
-                            <tr>
+                            <tr style="background-color: #ffdbdf;">
                                 <td>Tuition</td>
-                                <td>$3,468.06</td>
+                                <td> $4,820.91</td>
                             </tr>
-                            <tr style="background-color: #f5c6cb;">
-                                <td>Total</td>
-                                <td>$3,746.56</td>
+                            <tr style="background-color: #ffdbdf;">
+                                <td>University Advancement Fee</td>
+                                <td> $1,545.00</td>
                             </tr>
-                            <tr style="margin-top:50px;">
-                                <th style="background-color: white; padding:1%; color: #721c24">Payments</th>
-                                <th style="background-color: white; padding:1%; color: #721c24"></th>
+                            <tr style="background-color: #ffdbdf;">
+                                <td>Parking Permit</td>
+                                <td> $546.00</td>
                             </tr>
-                            <tr>
-                                <td>Installment 1</td>
-                                <td>$2,286.72</td>
+                            <tr  style="background-color:  #d4edda;">
+                                <td>Federal Loan</td>
+                                <td> $2,000.00</td>
                             </tr>
-                            <tr>
-                                <td>Installment 2</td>
-                                <td>$2,286.72</td>
+                            <tr  style="background-color:  #d4edda;">
+                                <td>Pell Grant</td>
+                                <td> $3,000.00</td>
                             </tr>
-                            <tr>
-                                <td>Installment 3</td>
-                                <td>$2,286.72</td>
-                            </tr>
-                            <tr style="background-color: #d4edda;">
-                                <td>Total</td>
-                                <td>$6,860.16</td>
+                            <tr  style="background-color:  #d4edda;">
+                                <td>General Scholarship</td>
+                                <td> $1,500.00</td>
                             </tr>
                         </table>
+                        <h1 style="font-size: 20px; font-weight: bold; margin-top: 20px; margin-left: 5px;">
+                            <span>Amount Due </span> <span style="padding-left: 675px">$692.91</span></h1>
+
                     </div>
                 </div>
             </div>
